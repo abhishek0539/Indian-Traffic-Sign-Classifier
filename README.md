@@ -2,7 +2,8 @@
 
 This project is a **Flask web application** for recognizing Indian Traffic Sign Language  using deep learning. The application leverages a trained neural network model which is based on InceptionV3 to classify Traffic sign from images.
 
-**working video**
+https://github.com/user-attachments/assets/89ad6b38-82bc-4a9f-8d8f-ba6c9f057794
+
 
 ## About Dataset
 The Indian Traffic Signs Prediction (85 Classes) dataset includes a variety of real-world photos of 85 different types of traffic signs that were taken in different settings.
