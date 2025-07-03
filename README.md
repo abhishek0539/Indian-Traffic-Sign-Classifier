@@ -1,4 +1,4 @@
-![Screenshot 2025-07-03 at 3 39 12 PM](https://github.com/user-attachments/assets/ec668736-3e35-45e7-9ddb-e9306209d97c)# Indian Traffic Sign Language Recognition Flask Application
+# Indian Traffic Sign Language Recognition Flask Application
 
 This project is a **Flask web application** for recognizing Indian Traffic Sign Language  using deep learning. The application leverages a trained neural network model which is based on InceptionV3 to classify Traffic sign from images.
 
