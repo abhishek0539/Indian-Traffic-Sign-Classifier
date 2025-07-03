@@ -1,56 +1,25 @@
-# Indian Traffic Sign Classification
+![Screenshot 2025-07-03 at 3 39 12 PM](https://github.com/user-attachments/assets/ec668736-3e35-45e7-9ddb-e9306209d97c)# Indian Traffic Sign Language Recognition Flask Application
 
-This project aims to classify different Indian traffic signs using a CNN model trained on the **Indian Traffic Sign Dataset**.The dataset used is downloaded via the Kaggle API it includes various traffic signs used in India, and the model predicts the class of a given sign from an image. It uses Convolutional Neural Network (CNN) implemented with TensorFlow and Keras. 
+This project is a **Flask web application** for recognizing Indian Traffic Sign Language  using deep learning. The application leverages a trained neural network model which is based on InceptionV3 to classify Traffic sign from images.
 
+**working video**
 
 ## About Dataset
-The dataset consists of two folders:
-- `Images`: Contains images of various traffic signs.
-- `Csv`: Contains CSV file to map the class indices to their respective traffic sign names
+The Indian Traffic Signs Prediction (85 Classes) dataset includes a variety of real-world photos of 85 different types of traffic signs that were taken in different settings.
 
+**Dataset summary**
+- The dataset has two main directories: `train/` and `test/`.
+- Each directory contains subfolders for 85 traffic sign classes.
+- Subfolder names represent the traffic sign category.
+- Each subfolder contains multiple images of that specific traffic sign.
+- Images vary in resolution, lighting, and background to reflect real-world conditions.
+
+Dataset is available [here](https://www.kaggle.com/datasets/sarangdilipjodh/indian-traffic-signs-prediction85-classes/data)
 
 ## Model Architecture
-The model you've implemented uses 2D Convolutional Neural Networks (CNNs), as it is designed for image processing, which involves 2D convolutions due to the spatial nature (height and width) of the images.
+**InceptionV3** is designed with factorized convolutions and auxiliary classifiers, making it both computationally efficient and highly effective for multi-class image classification. In traffic sign recognition tasks, it has demonstrated strong performance, achieving high accuracy and robust generalization to real-world images
+
+![Screenshot 2025-07-03 at 3 39 12 PM](https://github.com/user-attachments/assets/8de6f00d-d04d-4302-8b46-d48a2016d9e8)
 
 
-**Breakdown of the Layers:**
-**Conv2D Layer 1:**
-Kernel size: 5x5 ;
-Depth (filters): 32 ;
-Followed by Max Pooling and Dropout
 
-**Conv2D Layer 2:**
-Kernel size: 5x5 ;
-Depth (filters): 64 ;
-Followed by Max Pooling and Dropout
-
-**Conv2D Layer 3:**
-Kernel size: 5x5 ;
-Depth (filters): 128 ;
-Followed by Max Pooling and Dropout
-
-**Fully Connected Layers:**
-Flatten Layer: Flattens the output from the convolutional layers to a 1D vector.<br/>
-Fully Connected (Dense) Layer: 512 units ; Dropout applied
-
-**Output Layer:**
-Number of units: 59 (one per class)
-
-
-## Training and Results
-The model was trained for 50 epochs, with the following key metrics observed during training:
-- **Accuracy**: Around 89.21%
-- **Validation Accuracy**: 87.19%
-- **Test Accuracy**: 87.45%
-
-
-### Training and Validation Accuracy:
-![download](https://github.com/user-attachments/assets/2a171ed3-f137-4828-9397-99e93323d74a)
-
-
-### Training and Validation Loss:)
-![download copy](https://github.com/user-attachments/assets/6a88a9bd-d583-4d16-beb1-eac291e1ac74)
-
-
-### Example of Predicted Traffic Sign:
-<img width="546" alt="Screenshot 2024-09-16 at 6 05 33 PM" src="https://github.com/user-attachments/assets/3d46d655-cd00-46f3-ad52-e025164109ff">
